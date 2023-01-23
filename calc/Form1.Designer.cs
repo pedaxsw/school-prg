@@ -43,6 +43,7 @@
             this.equal.TabIndex = 0;
             this.equal.Text = "button1";
             this.equal.UseVisualStyleBackColor = true;
+            this.equal.Click += new System.EventHandler(this.equal_Click);
             // 
             // first
             // 
@@ -54,10 +55,16 @@
             // vyber
             // 
             this.vyber.FormattingEnabled = true;
+            this.vyber.Items.AddRange(new object[] {
+            "+",
+            "-",
+            "*",
+            "/"});
             this.vyber.Location = new System.Drawing.Point(322, 116);
             this.vyber.Name = "vyber";
             this.vyber.Size = new System.Drawing.Size(184, 23);
             this.vyber.TabIndex = 2;
+            this.vyber.SelectedIndexChanged += new System.EventHandler(this.vyber_SelectedIndexChanged);
             // 
             // second
             // 
@@ -72,6 +79,7 @@
             this.vysledek.Name = "vysledek";
             this.vysledek.Size = new System.Drawing.Size(144, 23);
             this.vysledek.TabIndex = 4;
+            this.vysledek.TextChanged += new System.EventHandler(this.vysledek_TextChanged);
             // 
             // Form1
             // 
