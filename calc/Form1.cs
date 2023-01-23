@@ -54,6 +54,9 @@ namespace calc
         private void second_TextChanged(object sender, EventArgs e)
         {
             num2 = int.Parse(second.Text);
+            //hello
+            //hello again
+            //hello for last time
         }
     }
 }
