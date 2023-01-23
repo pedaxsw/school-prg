@@ -51,6 +51,7 @@
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(236, 23);
             this.first.TabIndex = 1;
+            this.first.TextChanged += new System.EventHandler(this.first_TextChanged);
             // 
             // vyber
             // 
@@ -72,6 +73,7 @@
             this.second.Name = "second";
             this.second.Size = new System.Drawing.Size(236, 23);
             this.second.TabIndex = 3;
+            this.second.TextChanged += new System.EventHandler(this.second_TextChanged);
             // 
             // vysledek
             // 

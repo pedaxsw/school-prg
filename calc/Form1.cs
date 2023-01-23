@@ -18,7 +18,7 @@ namespace calc
 
         private void vysledek_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void equal_Click(object sender, EventArgs e)
@@ -35,13 +35,25 @@ namespace calc
             else
                 answer = 404;
 
+            vysledek.Text = answer.ToString();
 
-            vysledek.Text = answer;
+
         }
 
         private void vyber_SelectedIndexChanged(object sender, EventArgs e)
         {
             option = vyber.Text;
+        }
+
+        private void first_TextChanged(object sender, EventArgs e)
+        {
+            num1 = int.Parse(first.Text);
+
+        }
+
+        private void second_TextChanged(object sender, EventArgs e)
+        {
+            num2 = int.Parse(second.Text);
         }
     }
 }
